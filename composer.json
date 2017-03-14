@@ -1,5 +1,5 @@
 {
-    "name": "arturgrigio/google-laravel-calendar-2",
+    "name": "chintanpalan/google-laravel-calendar-2",
     "description": "Manage events on a Google Calendar",
     "keywords": [
         "calendar",
@@ -9,7 +9,7 @@
         "laravel-google-calendar",
         "oauth"
     ],
-    "homepage": "https://github.com/ArturGrigio/google-laravel-calendar-2",
+    "homepage": "https://github.com/chintan-palan/google-laravel-calendar-2",
     "license": "MIT",
     "require": {
         "php" : "^5.4.0",
@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Arturgrigio\\GoogleCalendar\\": "src"
+            "chintanpalan\\GoogleCalendar\\": "src"
         }
     }
 }
