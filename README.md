@@ -4,7 +4,7 @@ This package is originally by [Spatie](https://spatie.be/opensource). It was usi
 Here is an example of what you can do with the repo:
 
 ```php
-use Arturgrigio\GoogleCalendar\Event;
+use chintanpalan\GoogleCalendar\Event;
 
 //create a new event
 $event = new Event;
@@ -38,7 +38,7 @@ $event->delete();
 You can install the package via composer:
 
 ```bash
-composer require arturgrigio/google-laravel-calendar-2
+composer require chintanpalan/google-laravel-calendar-2
 ```
 
 Next up the service provider must be registered:
@@ -46,7 +46,7 @@ Next up the service provider must be registered:
 ```php
 'providers' => [
     ...
-    Arturgrigio\GoogleCalendar\GoogleCalendarServiceProvider::class,
+    chintanpalan\GoogleCalendar\GoogleCalendarServiceProvider::class,
 ];
 ```
 
@@ -55,7 +55,7 @@ Optionally the  `Spatie\GoogleCalendar\GoogleCalendarFacade` must be registered:
 ```php
 'aliases' => [
 	...
-    'GoogleCalendar' => Arturgrigio\GoogleCalendar\GoogleCalendarFacade::class,
+    'GoogleCalendar' => chintanpalan\GoogleCalendar\GoogleCalendarFacade::class,
     ...
 ]
 ```
@@ -63,7 +63,7 @@ Optionally the  `Spatie\GoogleCalendar\GoogleCalendarFacade` must be registered:
 You must publish the configuration with this command:
 
 ```bash
-php artisan vendor:publish --provider="Arturgrigio\GoogleCalendar\GoogleCalendarServiceProvider"
+php artisan vendor:publish --provider="chintanpalan\GoogleCalendar\GoogleCalendarServiceProvider"
 ```
 
 This will publish file called `laravel-google-calendar.php` in your config-directory with this contents:
@@ -116,7 +116,7 @@ The parameters you can pass in `$querParameters` are listed [on the documentatio
 
 ### Creating an event
 
-You can just new up a `Arturgrigio\GoogleCalendar\Event`-object
+You can just new up a `chintanpalan\GoogleCalendar\Event`-object
 
 ```php
 $event = new Event;
@@ -152,7 +152,7 @@ $event->save();
 
 ### Getting a single event
 
-Google assigns a unique id to every single event. You can get this id by getting events using the `get` method and getting the `id` property on a `Arturgrigio\GoogleCalendar\Event`-object:
+Google assigns a unique id to every single event. You can get this id by getting events using the `get` method and getting the `id` property on a `chintanpalan\GoogleCalendar\Event`-object:
 ```php
 // get the id of the first upcoming event in the calendar.
 $calendarId = Event::get()->first()->id;
@@ -199,6 +199,7 @@ $ composer test
 - [Freek Van der Herten](https://github.com/freekmurze)
 - [All Contributors](../../contributors)
 - [Spatie](https://spatie.be/opensource)
+- [Artur Grigio](https://github.com/ArturGrigio)
 
 ## License
 
