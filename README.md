@@ -1,6 +1,7 @@
 # Manage events on a Google Calendar
 
-This package is originally by [Spatie](https://spatie.be/opensource). It was using [Google API 1.1.7](https://github.com/google/google-api-php-client/tree/1.1.7), but I couldn't get the key to work properly, so I ended up reimplementing the `$client` with `OAuth2`.
+This package is originally by [Artur Grigio](https://github.com/ArturGrigio). But its minimum requirements were PHP 7.0, so I ended up creating a new package with reduced dependency.
+I have made no changes thereafter to the package.
 Here is an example of what you can do with the repo:
 
 ```php
